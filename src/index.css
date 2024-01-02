@@ -83,7 +83,7 @@ select {
   --neutral-clr-dark-gray-cyan: hsl(180, 8%, 52%);
   --neutral-clr-very-dark-gray-cyan: hsl(180, 14%, 20%);
 
-  --font-size: 0.9375rem;
+  --font-size-body: 0.9375rem;
 
   --font-family-base: 'League Spartan', sans-serif;
 
