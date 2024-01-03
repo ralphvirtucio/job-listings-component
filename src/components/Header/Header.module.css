@@ -1,0 +1,8 @@
+.header {
+  background-image: url(/src/assets/images/bg-header-mobile.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: auto;
+  height: 9.75rem;
+  background-color: var(--primary-clr-one);
+}

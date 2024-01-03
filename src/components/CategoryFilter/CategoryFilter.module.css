@@ -1,0 +1,47 @@
+.wrapper {
+  display: flex;
+  background-color: #fff;
+  border-radius: 0.3125rem;
+  box-shadow: 0 15px 20px -5px rgba(13, 113, 130, 0.15);
+  margin-inline: 1rem;
+  padding-block: 1.25rem;
+  padding-inline: 1.7rem;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.list {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.category {
+  display: flex;
+  align-items: center;
+  background: var(--neutral-clr-cyan-95);
+  background: red;
+  color: var(--primary-clr-one);
+  border-radius: 0.25rem;
+
+
+
+  p {
+    padding-inline-start: .5rem;
+    padding-inline-end: .70rem;
+    font-weight: 700;
+    padding-block: .2rem;
+  }
+
+
+
+  button {
+    background-color: var(--primary-clr-one);
+    border: none;
+    border-top-right-radius: 0.25rem;
+    border-bottom-right-radius: 0.25rem;
+
+
+  }
+}

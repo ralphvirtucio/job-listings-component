@@ -1,30 +1,13 @@
+import Header from './components/Header';
+import { CategoryFilterContainer } from './container/CategoryFilterContainer';
+
 const App = () => {
   return (
     <>
-      <header>
-        <h1>Job Listings</h1>
-      </header>
+      <Header />
 
       <main>
-        <section>
-          <div>
-            <ul>
-              <li>
-                <button>Frontend</button>
-              </li>
-              <li>
-                <button>CSS</button>
-              </li>
-              <li>
-                <button>JavaScript</button>
-              </li>
-            </ul>
-
-            <div>
-              <button>Clear</button>
-            </div>
-          </div>
-        </section>
+        <CategoryFilterContainer />
 
         <ul>
           <li>

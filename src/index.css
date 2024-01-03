@@ -37,6 +37,8 @@ body {
   min-height: 100vh;
   text-rendering: optimizeSpeed;
   line-height: 1.5;
+  background-color: var(--neutral-clr-cyan-96);
+  font-family: var(--font-family-base);
 }
 
 /* A elements that don't have a class get default styles */
@@ -76,12 +78,14 @@ select {
 }
 
 :root {
-  --primary-clr-des-dark-cyan: hsl(180, 29%, 50%);
+  --primary-clr-one: hsl(180, 29%, 50%);
 
-  --neutral-clr-light-gray-cyan-bg: hsl(180, 52%, 96%);
-  --neutral-clr-light-gray-cyan-filter-tab: hsl(180, 31%, 95%);
-  --neutral-clr-dark-gray-cyan: hsl(180, 8%, 52%);
-  --neutral-clr-very-dark-gray-cyan: hsl(180, 14%, 20%);
+
+  --neutral-clr-cyan-96: hsl(180, 52%, 96%);
+  --neutral-clr-cyan-95: hsl(180, 52%, 96%);
+  --neutral-clr-dark-cyan-52: hsl(180, 8%, 52%);
+  --neutral-clr-dark-cyan-20: hsl(180, 14%, 20%);
+
 
   --font-size-body: 0.9375rem;
 
@@ -89,4 +93,14 @@ select {
 
   --font-weight-500: 500;
   --font-weight-700: 700;
+}
+
+.sr-only:not(:focus):not(:active) {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
 }
