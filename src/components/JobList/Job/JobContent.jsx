@@ -1,5 +1,6 @@
-import styles from './JobContent.module.css'
-import companyImage from '../../../assets/images/photosnap.svg'
+import styles from './JobContent.module.css';
+import companyImage from '../../../assets/images/photosnap.svg';
+import { Pill } from '../../Pill';
 
 const JobContent = () => {
   return (
@@ -15,8 +16,8 @@ const JobContent = () => {
         <div className={styles['job__content--info-header']}>
           <h2 className={styles.job__company}>Photosnap</h2>
           <div className={styles.job__activity}>
-          <span>New!</span>
-          <span>Featured</span>
+           <Pill label='New!'/>
+           <Pill label='Featured'/>
           </div>
         </div>
 
@@ -24,11 +25,17 @@ const JobContent = () => {
           <h3>Senior Frontend Developer</h3>
         </div>
 
-        <div className={styles.job__details}>
-          <p>1d ago</p>
-          <p>Full Time</p>
-          <p>USA only</p>
-        </div>
+        <ul className={styles.job__details}>
+          <li>
+            <p>1d ago</p>
+          </li>
+          <li>
+            <p>Full Time</p>
+          </li>
+          <li>
+            <p>USA only</p>
+          </li>
+        </ul>
       </div>
     </div>
   );
