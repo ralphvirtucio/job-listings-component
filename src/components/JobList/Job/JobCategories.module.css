@@ -1,0 +1,19 @@
+.job__category {
+  padding-block-start: 1rem;
+}
+
+.job__category-list {
+  display: flex;
+  width: 80%;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
+.job__category-list-item {
+  button {
+    background-color: transparent;
+    border: none;
+    color: var(--primary-clr-one);
+    font-weight: 700;
+  }
+}

@@ -1,24 +1,25 @@
-import React from 'react'
+import styles from './JobCategories.module.css'
+
 
 const JobCategories = () => {
   return (
-    <div>
-    <ul>
-      <li>
+    <div className={styles.job__category}>
+    <ul className={styles['job__category-list']}>
+      <li className={styles['job__category-list-item']}>
         <button>Frontend</button>
       </li>
-      <li>
+      <li className={styles['job__category-list-item']}>
         <button>Senior</button>
       </li>
-      <li>
+      <li className={styles['job__category-list-item']}>
         <button>HTML</button>
       </li>
-      <li>
-        <button>CSS JavaScript</button>
+      <li className={styles['job__category-list-item']}>
+        <button>CSS </button>
       </li>
-      {/* <li>
-        <button></button>
-      </li> */}
+       <li className={styles['job__category-list-item']}>
+        <button>JavaScript</button>
+      </li>
     </ul>
   </div>
   )
