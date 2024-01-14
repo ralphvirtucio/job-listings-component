@@ -8,6 +8,7 @@
   padding-inline: 1.7rem;
   justify-content: space-between;
   align-items: center;
+  transform: translateY(-2rem);
 }
 
 .list {
@@ -19,12 +20,10 @@
 
 .category {
   display: flex;
-  align-items: center;
   background: var(--neutral-clr-cyan-95);
-  background: red;
   color: var(--primary-clr-one);
   border-radius: 0.25rem;
-
+  overflow: hidden;
 
 
   p {
@@ -39,9 +38,15 @@
   button {
     background-color: var(--primary-clr-one);
     border: none;
-    border-top-right-radius: 0.25rem;
-    border-bottom-right-radius: 0.25rem;
-
-
+    line-height: 0;
   }
+}
+
+.btn__clear {
+  display: inline-block;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  color: var(--neutral-clr-dark-cyan-52);
+  font-weight: var(--font-weight-700);
 }

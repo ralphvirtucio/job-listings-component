@@ -52,9 +52,7 @@ const CategoryFilter = () => {
           </li>
         </ul>
 
-        <div>
-          <button>Clear</button>
-        </div>
+          <button className={styles.btn__clear}>Clear</button>
       </div>
     </section>
   );
