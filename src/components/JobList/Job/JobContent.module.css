@@ -62,18 +62,18 @@
 }
 
 @media only screen and (min-width: 64rem) {
+
+  .job__content {
+    border-bottom: none;
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    padding-block-end: 0;
+  }
+
   .job__image {
     width: 5.5rem;
     height: 5.5rem;
     position: static;
-}
-.job__content--info {
-  flex-direction: row;
-}
-
-.job__content--info-content {
-  display: flex;
-  flex-direction: column;
-}
-
+  }
 }

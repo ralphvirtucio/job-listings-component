@@ -17,3 +17,10 @@
     font-weight: 700;
   }
 }
+
+
+@media only screen and (min-width: 64rem) {
+  .job__category {
+    padding-block-start: 0;
+  }
+}

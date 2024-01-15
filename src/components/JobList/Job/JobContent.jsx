@@ -5,21 +5,19 @@ import { Pill } from '../../Pill';
 const JobContent = () => {
   return (
     <div className={styles.job__content}>
-      <div className={styles['job__content--info']}>
-        <div className={styles.job__image}>
-          <img
-            src={companyImage}
-            alt='Photosnap'
-          />
-        </div>
+      <div className={styles.job__image}>
+        <img
+          src={companyImage}
+          alt='Photosnap'
+        />
+      </div>
 
-        <div>
-          <div className={styles['job__content--info-header']}>
-            <h2 className={styles.job__company}>Photosnap</h2>
-            <div className={styles.job__activity}>
-              <Pill label='New!' />
-              <Pill label='Featured' />
-            </div>
+      <div className={styles['job__content--info']}>
+        <div className={styles['job__content--info-header']}>
+          <h2 className={styles.job__company}>Photosnap</h2>
+          <div className={styles.job__activity}>
+            <Pill label='New!' />
+            <Pill label='Featured' />
           </div>
         </div>
 
