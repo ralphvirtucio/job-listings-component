@@ -16,6 +16,11 @@
   }
 }
 
+.job__content--info {
+  display: flex;
+  flex-direction: column;
+}
+
 
 .job__content--info-header {
   display: flex;

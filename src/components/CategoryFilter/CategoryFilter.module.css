@@ -13,6 +13,10 @@
   padding-inline: 1.7rem;
   justify-content: space-between;
   align-items: center;
+  width: 90%;
+  max-width: 70rem;
+  margin-inline: auto;
+
 }
 
 .list {
@@ -54,3 +58,9 @@
   color: var(--neutral-clr-dark-cyan-52);
   font-weight: var(--font-weight-700);
 }
+
+/* @media only screen and (min-width: 64rem) {
+  .wrapper {
+  
+  }
+} */
