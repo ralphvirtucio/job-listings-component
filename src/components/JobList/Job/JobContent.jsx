@@ -13,7 +13,7 @@ const JobContent = () => {
           />
         </div>
 
-        <div >
+        <div>
           <div className={styles['job__content--info-header']}>
             <h2 className={styles.job__company}>Photosnap</h2>
             <div className={styles.job__activity}>
