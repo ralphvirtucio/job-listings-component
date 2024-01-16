@@ -50,6 +50,8 @@
     display: flex;
     gap: .5rem;
     color: var(--neutral-clr-dark-cyan-52);
+
+
    &:not(:nth-child(1)) {
       &::before {
         color: #B7C4C4;
@@ -63,6 +65,15 @@
 
 @media only screen and (min-width: 64rem) {
 
+  .job__content--info-header {
+    gap: 0.9rem;
+  
+    
+    .job__company {
+      font-size: 1.125rem;
+    }
+  }
+
   .job__content {
     border-bottom: none;
     display: flex;
@@ -71,9 +82,25 @@
     padding-block-end: 0;
   }
 
+  
+.job__title {
+  margin-block: .35rem;
+  h3 {
+    font-size: 1.375rem;
+
+  }
+}
+
   .job__image {
     width: 5.5rem;
     height: 5.5rem;
     position: static;
+  }
+
+
+  .job__details {
+    li p {
+      font-size: 1.125rem;
+    }
   }
 }

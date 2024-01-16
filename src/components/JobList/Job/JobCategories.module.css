@@ -10,8 +10,11 @@
 }
 
 .job__category-list-item {
+ 
+
   button {
-    background-color: transparent;
+    border-radius: 0.25rem;
+    background: hsla(180, 29%, 50%, 0.1);
     border: none;
     color: var(--primary-clr-one);
     font-weight: 700;
