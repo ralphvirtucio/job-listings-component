@@ -1,8 +1,15 @@
 .header {
-  background-image: url(/src/assets/images/bg-header-mobile.svg);
+  background-image: url(/public/assets/images/bg-header-mobile.svg);
   background-size: cover;
   background-repeat: no-repeat;
   width: auto;
   height: 9.75rem;
   background-color: var(--primary-clr-one);
+}
+
+
+@media only screen and (min-width: 64rem) {
+  .header {
+  background-image: url(/public/assets/images/bg-header-desktop.svg);
+  }
 }
