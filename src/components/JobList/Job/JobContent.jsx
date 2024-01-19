@@ -1,10 +1,10 @@
 import styles from './JobContent.module.css';
-import companyImage from '../../../assets/images/photosnap.svg';
 import { Pill } from '../../Pill';
 import PropTypes from 'prop-types';
 
 
 const JobContent = ({ company, logo, position, postedAt, contract, location, featured, isNew }) => {
+
   return (
     <div className={styles.job__content}>
       <div className={styles.job__image}>
