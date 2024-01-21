@@ -2,12 +2,12 @@ import styles from './JobCategories.module.css'
 import PropTypes from 'prop-types'
 
 
-const JobCategories = ({categories}) => {
+const JobCategories = ({categories, onSelectCategory }) => {
 
   const mappedData = categories().map(category => {
     return (
       <li key={category} className={styles['job__category-list-item']}>
-        <button>{category}</button>
+        <button onClick={() => onSelectCategory(category)}>{category}</button>
       </li>
     )
   })
@@ -23,7 +23,8 @@ const JobCategories = ({categories}) => {
 }
 
 JobCategories.propTypes = {
-  categories: PropTypes.func
+  categories: PropTypes.func,
+  onSelectCategory: PropTypes.func
 }
 
 

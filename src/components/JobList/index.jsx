@@ -2,10 +2,10 @@ import Job from './Job';
 import PropTypes from 'prop-types'
 
 
-const JobList = ({jobData}) => {
+const JobList = ({jobData, onSelectCategory}) => {
   const mappedData = jobData.map(data => {
     return (
-      <Job key={data.id} data={data} />
+      <Job key={data.id} data={data} onSelectCategory={onSelectCategory} />
     )
   })
 
@@ -17,7 +17,8 @@ const JobList = ({jobData}) => {
 };
 
 JobList.propTypes = {
-  jobData: PropTypes.array
+  jobData: PropTypes.array,
+  onSelectCategory: PropTypes.func
 }
 
 export default JobList;
