@@ -18,6 +18,13 @@
     border: none;
     color: var(--primary-clr-one);
     font-weight: 700;
+    cursor: pointer;
+    transition: all 50ms ease-in-out;
+
+    &:hover {
+      background-color: var(--primary-clr-one);
+      color: #fff;
+    }
   }
 }
 

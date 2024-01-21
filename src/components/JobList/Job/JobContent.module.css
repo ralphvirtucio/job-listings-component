@@ -35,10 +35,16 @@
 
 .job__title {
   margin-block: .56rem;
+  cursor: pointer;
   h3 {
     font-size: var(--font-size-body);
     color: var(--neutral-clr-dark-cyan-20);
     font-weight: 700;
+    transition: color 50ms ease-in-out;
+
+    &:hover {
+      color: var(--primary-clr-one);
+    }
   }
 }
 

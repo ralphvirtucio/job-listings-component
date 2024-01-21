@@ -47,6 +47,12 @@
     background-color: var(--primary-clr-one);
     border: none;
     line-height: 0;
+    cursor: pointer;
+    transition: background-color 50ms ease-in-out;
+
+    &:hover {
+      background-color: var(--neutral-clr-dark-cyan-20);
+    }
   }
 }
 
@@ -57,6 +63,12 @@
   cursor: pointer;
   color: var(--neutral-clr-dark-cyan-52);
   font-weight: var(--font-weight-700);
+  transition: all 50ms ease-in-out;
+
+  &:hover {
+    color: var(--primary-clr-one);
+    text-decoration: underline;
+  }
 }
 
 /* @media only screen and (min-width: 64rem) {
