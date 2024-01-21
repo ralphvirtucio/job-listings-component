@@ -9,7 +9,7 @@ const Job = ({ data }) => {
     <li className={styles.job}>
       <JobContent  company={company} logo={logo}  position={position} postedAt={postedAt} contract={contract} location={location} featured={featured} isNew={isNew} />
 
-      <JobCategoriesContainer />
+      <JobCategoriesContainer role={role} level={level} languages={languages} tools={tools} />
     </li>
   );
 };

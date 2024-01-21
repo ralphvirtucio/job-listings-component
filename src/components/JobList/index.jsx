@@ -1,7 +1,8 @@
 import Job from './Job';
-import jobData from '../../data.json'
+import PropTypes from 'prop-types'
 
-const JobList = () => {
+
+const JobList = ({jobData}) => {
   const mappedData = jobData.map(data => {
     return (
       <Job key={data.id} data={data} />
@@ -14,5 +15,9 @@ const JobList = () => {
     </ul>
   );
 };
+
+JobList.propTypes = {
+  jobData: PropTypes.array
+}
 
 export default JobList;

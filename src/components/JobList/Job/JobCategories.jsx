@@ -1,28 +1,30 @@
 import styles from './JobCategories.module.css'
+import PropTypes from 'prop-types'
 
 
-const JobCategories = () => {
+const JobCategories = ({categories}) => {
+
+  const mappedData = categories().map(category => {
+    return (
+      <li key={category} className={styles['job__category-list-item']}>
+        <button>{category}</button>
+      </li>
+    )
+  })
+
+  
   return (
     <div className={styles.job__category}>
     <ul className={styles['job__category-list']}>
-      <li className={styles['job__category-list-item']}>
-        <button>Frontend</button>
-      </li>
-      <li className={styles['job__category-list-item']}>
-        <button>Senior</button>
-      </li>
-      <li className={styles['job__category-list-item']}>
-        <button>HTML</button>
-      </li>
-      <li className={styles['job__category-list-item']}>
-        <button>CSS </button>
-      </li>
-       <li className={styles['job__category-list-item']}>
-        <button>JavaScript</button>
-      </li>
+      {mappedData}
     </ul>
   </div>
   )
 }
+
+JobCategories.propTypes = {
+  categories: PropTypes.func
+}
+
 
 export default JobCategories

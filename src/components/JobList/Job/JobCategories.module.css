@@ -30,6 +30,10 @@
 
 
 @media only screen and (min-width: 64rem) {
+  .job__category-list {
+    width: 100%;
+  }
+
   .job__category {
     padding-block-start: 0;
   }
