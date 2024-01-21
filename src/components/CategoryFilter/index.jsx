@@ -3,6 +3,8 @@ import PropTypes from 'prop-types'
 
 const CategoryFilter = ({categories, onRemoveCategory, onClearCategories }) => {
 
+  const isCategoryExist = categories.length === 0 ? 'is_categories_exist' : ''
+
   const mappedCategories = categories.map(category => {
     return (
       <li className={styles.category} key={category.id}>
@@ -25,7 +27,7 @@ const CategoryFilter = ({categories, onRemoveCategory, onClearCategories }) => {
 
 
   return (
-    <section className={styles.container}>
+    <section className={`${styles.container} ${styles[isCategoryExist]}`}>
       <div className={styles.wrapper}>
         <ul className={styles.list}>
           {mappedCategories}

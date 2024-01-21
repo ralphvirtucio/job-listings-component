@@ -1,6 +1,12 @@
+
 .container {
   transform: translateY(-2rem);
   margin-block-end: 2.5rem;
+
+  &.is_categories_exist {
+    opacity: 0;
+  }
+  
 }
 
 .wrapper {

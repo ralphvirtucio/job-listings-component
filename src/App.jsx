@@ -50,7 +50,7 @@ const App = () => {
       <Header />
 
       <main>
-        <CategoryFilterContainer categories={selectedCategories} onRemoveCategory={handleRemoveCategory} onClearCategories={handleClearCategory}/>
+      <CategoryFilterContainer categories={selectedCategories} onRemoveCategory={handleRemoveCategory} onClearCategories={handleClearCategory}/>
 
         <JobList jobData={jobData} onSelectCategory={handleSelectCategories}/>
       </main>
