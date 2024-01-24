@@ -10,7 +10,15 @@ const App = () => {
   const [jobData, setJobData] = useState(data)
   const [selectedCategories, setSelectedCategories] = useState([])
 
+  function mergeCategories(item) {
+    return [item.role, item.level, ...item.languages, ...item.tools]
+  }
 
+
+
+  const filteredJobData = jobData.filter(item => selectedCategories.every(tag => mergeCategories(item).includes(tag.name)))
+
+ 
   function handleSelectCategories(category) {
 
     const possible = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
@@ -52,7 +60,7 @@ const App = () => {
       <main>
       <CategoryFilterContainer categories={selectedCategories} onRemoveCategory={handleRemoveCategory} onClearCategories={handleClearCategory}/>
 
-        <JobList jobData={jobData} onSelectCategory={handleSelectCategories}/>
+        <JobList jobData={filteredJobData} onSelectCategory={handleSelectCategories}/>
       </main>
     </>
   );

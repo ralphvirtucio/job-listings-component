@@ -3,14 +3,7 @@ import PropTypes from 'prop-types';
 
 export const JobCategoriesContainer = ({ role, level, languages, tools, onSelectCategory }) => {
   function listAllCategories() {
-    const arr = [];
-
-    arr.push(role);
-    arr.push(level);
-    arr.push(...languages);
-    arr.push(...tools);
-
-    return arr;
+   return [role, level, ...languages, ...tools]
   }
 
 
