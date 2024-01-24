@@ -5,8 +5,11 @@ import PropTypes from 'prop-types';
 
 const Job = ({ data, onSelectCategory }) => {
   const { company, logo, new: isNew, featured, position, role, level, postedAt, contract, location, languages, tools } = data
+
+  const isFeaturedAndNew = featured && isNew ? 'job__featured-new' : ''
+
   return (
-    <li className={styles.job}>
+    <li className={`${styles.job} ${styles[isFeaturedAndNew]}`}>
       <JobContent  company={company} logo={logo}  position={position} postedAt={postedAt} contract={contract} location={location} featured={featured} isNew={isNew} />
 
       <JobCategoriesContainer role={role} level={level} languages={languages} tools={tools} onSelectCategory={onSelectCategory}/>

@@ -5,6 +5,7 @@ import PropTypes from 'prop-types';
 
 const JobContent = ({ company, logo, position, postedAt, contract, location, featured, isNew }) => {
 
+
   return (
     <div className={styles.job__content}>
       <div className={styles.job__image}>
@@ -18,8 +19,8 @@ const JobContent = ({ company, logo, position, postedAt, contract, location, fea
         <div className={styles['job__content--info-header']}>
           <h2 className={styles.job__company}>{company}</h2>
           <div className={styles.job__activity}>
-            <Pill label='New!' />
-            <Pill label='Featured' />
+            {isNew && <Pill label='New!' />}
+            {featured && <Pill label='Featured' />}
           </div>
         </div>
 
